@@ -1,0 +1,19 @@
+{
+  "network": "arbitrumSepolia",
+  "contractAddress": "0x3858f34ccb7643e9655A3991A8Ed514B10bE0fd1",
+  "deployer": "0x7A65a5A189609c4536EcCE5288bA24Fa6ABCD9DE",
+  "swapRouter": "0x101F443B4d1b059569D643917553c771E1b9663E",
+  "factory": "0x248AB79Bbb9bC29bB72f7Cd42F17e054Fc40188e",
+  "timestamp": "2026-01-09",
+  "configuration": {
+    "tokenA": "0x980B62Da83eFf3D4576C647993b0c1D7faf17c73",
+    "tokenB": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
+    "lowerPrice": "2800",
+    "upperPrice": "3600",
+    "gridLevels": 15,
+    "orderSizeA": "0.05",
+    "orderSizeB": "150",
+    "poolFee": 500,
+    "maxSlippageBps": 50
+  }
+}

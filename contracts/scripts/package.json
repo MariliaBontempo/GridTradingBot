@@ -1,0 +1,25 @@
+{
+  "name": "grid-trading-bot-scripts",
+  "version": "1.0.0",
+  "description": "TypeScript scripts for Grid Trading Bot deployment and management",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "tsx src/deploy.ts",
+    "configure": "tsx src/configure.ts",
+    "monitor": "tsx src/monitor.ts",
+    "keeper": "tsx src/keeper.ts",
+    "cli": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "viem": "^2.21.0",
+    "dotenv": "^16.4.5",
+    "commander": "^12.1.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "tsx": "^4.19.0"
+  }
+}
