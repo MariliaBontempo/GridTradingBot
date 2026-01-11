@@ -1,0 +1,31 @@
+name: ChainGuard Security Scan
+
+on:
+  push:
+    branches: [ main, develop, master ]
+    paths:
+      - '**/*.sol'
+  pull_request:
+    branches: [ main, develop, master ]
+    paths:
+      - '**/*.sol'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Run ChainGuard Security Scan
+        uses: Bontempo-Web3/ChainGuard@v1
+        with:
+          contracts-path: './contracts'
+          
+      - name: Upload Scan Results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chainguard-results
+          path: chainguard-results.json
